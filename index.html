@@ -13,14 +13,15 @@
 	<div class="main">
 		<form id="play-form" class="row">
       <div class="input-field">
-				<input id="audio-string" type="text" class="validate">
-      	<label for="audio-string">Texto a reproducir</label>
+				<textarea id="audio-string" class="materialize-textarea"></textarea>
+        <label for="audio-string">Texto a reproducir</label>
       </div>
 
 			<p class="range-field">
-	      <input type="range" id="test5" min="1" max="500"
+	      <input type="range" id="freq" min="1" max="500"
 					oninput="debugRange(this.value)" onchange="debugRange(this.value)" />
     	</p>
+			<p id="freq-text"></p>
 
 			<div class="">
 				<button type="submit" class="waves-effect waves-light btn indigo lighten-1">
